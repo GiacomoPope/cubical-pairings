@@ -1,0 +1,36 @@
+[package]
+name = "cubical_pairing"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand_core = "0.6"
+hex = "0.4.3"
+num-bigint = "0.4.6"
+sha2 = "0.10.8"
+sha3 = "0.10.8"
+
+[dev-dependencies]
+criterion = { version = "0.4", features = ["html_reports"] }
+
+[[bench]]
+name = "bench_arithmetic"
+path = "benches/bench_arithmetic.rs"
+harness = false
+
+[[bench]]
+name = "bench_pairing_sidh"
+path = "benches/bench_pairing_sidh.rs"
+harness = false
+
+[[bench]]
+name = "bench_pairing_sqisign"
+path = "benches/bench_pairing_sqisign.rs"
+harness = false
+
+[[bench]]
+name = "bench_compression"
+path = "benches/bench_compression.rs"
+harness = false

@@ -1,0 +1,23 @@
+// Characteristic: p = 65*2^376 - 1
+pub static ea: usize = 376;
+
+// Supersingular elliptic curve with Montgomery coeff A0
+pub static A0_str: &str = "11397c358be97deebeebb0b89b142bb393c7438e2b18ee5d915416ce7ab7a29bffce458609fc1328cf9bbff901648b34103ea17345c83b27fe5724b0459c0a5ed7b407ed7d9de926848f6bd9338bfa4e15f589dea9e70e389d51711a740faf1c";
+
+// <P, Q> are the generators of the curve of order N = 2^ea
+pub static PX_str: &str = "6cd73913850a12bf0aa61e129c9e06d6b0a19f46e9e49ce9ac057ee7eaff9fb653829bceb0320e4076229d4ac5d4ad3f78adfaed0df3eafe45e97f61a2252ed1cc54e2a64bceef13544c3e1128a7a065854b25f637e73a3cf0095b555ba82639";
+pub static PY_str: &str = "f57233c59c9ace36a07fa5f6a552748d5c1e9804f196e159e0666599a6e834a7e91365143bac4852a7cee5f083519907ea1e0fccd18b5becde13af7457ad1170023d40108584e4c02b793498080c7fb8eef5d20bcfa2122ce4de8bd2abdf3a2b";
+pub static QX_str: &str = "e456b8855ad8c70303456d93cbbadbb7c41e603f4c60d45397cdfba53237417bbcaa1401694958c2a00799da19d0cd0a683df44fa5d844045dcf570bb44b51322dfd98b31cdaa7455600fd04d3b5832893101155ed90e22bf89d66425f4d6315";
+pub static QY_str: &str = "abb4344072d7a104ea3aa04997dfd75ae200705e1e03d15b41c9fc855cea2538da5ed9e2d05970ec4bcd5d005573262ef7acadc03d8df06ce42b6594e19a04f59b72a894432afb1067fdeb1c50e5e115a42bbbddeaf2f50feadee6590ab70c3e";
+// P - Q
+pub static PmQX_str: &str = "d3bb5b417ef02612b2aad19c9809f608fe06c01ea7df39c5c66932c331b3e659f92e4295e535a62f4b98550d7f5cbf071c8cd24231bce7a86e28fed248fab052e40c84f83b501d06cacf0e17f5466e1428512a50b31f2ddb8a6773ec4920c53e";
+pub static PmQY_str: &str = "cb19cf1095d6b89d3c293ef208f024d8573bf140e14cee039679b515be588def31d99520a03ff097685f34711ea405340754bb4e5a9e065ddb72f27be3e613982668d0ff7a1abe65b4a27b3fc9d7206adf771b022457995f2645caf3a66b452c";
+// dA = (p + 1) // A
+pub static dA: [u8; 1] = [65];
+pub static dA_BITLEN: usize = 7;
+
+// Tate pairings for order: e_2^ea(P, Q)
+pub static tate_pairing_str: &str = "b2bce82828199c8cc165f0b8e3b57835f0a33761ed9f38230015759c48b3990284c2c4e69da04fe278bcc69ecd57bc3e0b4bfb3de8a9d8786dee924ae09903007db4301c96fca172b1a1cdec1dd3f4b320ee517b6f3c2f52e030e729a5933838";
+
+// Weil pairings for order: e_2^ea(P, Q)
+pub static weil_pairing_str: &str = "79da4df9cc111f7b6facb693310838ca38cadadcd85c076a0a8b26e11c76d127a01e56bf43d3d3c7833d5dcc72038808d3b90ae4ec1845024b459780e43aba837548554ffed70005dce01ac03f12f484a754c39e56b89f2ab6ceff8a24405e03";
